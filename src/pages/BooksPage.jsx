@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 
 export default function BooksPage() {
   const [book, setBook] = useState(null);
@@ -10,10 +10,6 @@ export default function BooksPage() {
         console.log(apiData);
       });
   }, []);
-
-  // useEffect(() => {
-  //   console.log(book);
-  // }, [book]);
 
   return (
     <div className="bg-gray-400 min-h-screen ">

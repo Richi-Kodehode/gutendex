@@ -9,12 +9,18 @@ export default function Header() {
           <h1 className="text-4xl text-white ">Gutendex</h1>
         </Link>
       </div>
-      <div className="text-2xl text-white ">
-        <input type="text" placeholder="Book title here" />
+      <div className="text-2xl text-white flex">
+        <p>--</p>
+        <input
+          className="placeholder:text-center"
+          type="text"
+          placeholder="Book title here"
+        />
+        <p>--</p>
       </div>
       <div>
         <select className="text-2xl text-white" name="" id="">
-          <option value="Books">Books</option>
+          <option value="Books">Category</option>
         </select>
       </div>
       <nav className="text-2xl text-white">

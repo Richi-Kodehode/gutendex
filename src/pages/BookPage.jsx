@@ -1,7 +1,9 @@
+import BookCard from "../components/bookCard";
+
 export default function BookPage() {
   return (
-    <div>
-      <p>Animeboy Joakim</p>
-    </div>
+    <>
+      <BookCard />
+    </>
   );
 }
