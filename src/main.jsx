@@ -13,8 +13,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/BooksPage",
         element: <BooksPage />,
+        index: true,
       },
       {
         path: "/BookPage",
