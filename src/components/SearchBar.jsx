@@ -1,3 +1,5 @@
+// .filter .contains
+
 export default function SearchBar() {
   return (
     <>
