@@ -14,7 +14,7 @@ export default function BooksPage() {
   return (
     <div className="bg-gray-400 min-h-screen ">
       {books?.map((book) => (
-        <h3 key={book.id}>{book.title}</h3>
+        <h3>{book.title}</h3>
       ))}
     </div>
   );

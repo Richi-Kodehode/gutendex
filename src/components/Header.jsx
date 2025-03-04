@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import Category from "./Category";
-import { useEffect } from "react";
 
 export default function Header({
   searchParams,
@@ -9,11 +8,6 @@ export default function Header({
   selectedCategory,
   setSelectedCategory,
 }) {
-  useEffect(() => {
-    if (searchParams) {
-      console.log("Hello", searchParams);
-    }
-  }, []);
   return (
     <section className="bg-gray-500 p-5 flex flex-wrap h-20 justify-between">
       <div>
@@ -26,8 +20,6 @@ export default function Header({
           value={searchParams}
           onChange={(e) => {
             setSearchParams(e.target.value);
-            console.log(e.target.value);
-            console.log(searchParams);
           }}
           className="placeholder:text-center px-2"
           type="text"

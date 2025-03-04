@@ -1,25 +1,14 @@
-import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import FavoriteButton from "./FavoriteButton";
 
-export default function BookCard() {
+export default function BookCard({ book }) {
+  if (!book) return null;
   return (
-    <div className="bg-gray-400 min-h-screen flex justify-center ">
-      <div className="bg-gray-600 flex flex-col rounded-xl shadow-gray-800 shadow-lg h-96 mt-10">
-        <img src="#" alt="IMAGE" />
-        <h3>title</h3>
-        <p>author</p>
-        <p>summaries</p>
-        <p>download_count</p>
-        <button>
-          <FaStar
-            style={{
-              color: "yellow",
-              width: "30px",
-              height: "30px",
-            }}
-          ></FaStar>
-        </button>
-      </div>
-      <div></div>
+    <div>
+      <li>
+        <Link to={`/src/pages/BookPage${book.id}`}>{book.title}</Link>
+        <FavoriteButton book={book} />
+      </li>
     </div>
   );
 }
